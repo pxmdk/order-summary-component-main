@@ -30,3 +30,7 @@ The designs were created to the following widths:
 
 - Family: [Red Hat Display](https://fonts.google.com/specimen/Red+Hat+Display)
 - Weights: 500, 700, 900
+
+-     	Order Summary You can now listen to millions of songs, audiobooks, and
+      podcasts on any device anywhere you like! Annual Plan $59.99/year Change
+      Proceed to Payment Cancel Order

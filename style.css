@@ -1,6 +1,72 @@
+/* Main Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {
+--pale-blue-primary: hsl(225, 100%, 94%);
+--bright-blue-primary: hsl(245, 75%, 52%);
+--bright-blue-primary-hover: hsl(245, 83%, 68%);
+--very-pale-blue-nautral: hsl(225, 100%, 98%);
+--desaturated-blue-neutral: hsl(224, 23%, 55%);
+--dark-blue-neutral: hsl(223, 47%, 23%);
+--white: hsl(0, 0%, 100%);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body {
     background-image: url(images/pattern-background-desktop.svg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: red;
+    background-color: var(--pale-blue-primary);
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.container {
+    width: 450px;
+    height: 697px;
+    flex-shrink: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--white);
+    border-radius: 20px;
+}
+.hero img{
+    border-radius: 20px 20px 0 0;
+}
+section {
+    width: 354px;
+    margin: 0 auto;
+}
+.text_content h2{
+    color: var(--dark-blue-neutral);
+    text-align: center;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    margin-top: 32px;
+}
+.text_content p{
+    margin-top: 17px;
+    color: var(--desaturated-blue-neutral);
+    text-align: center;
+    font-family: Red Hat Display;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px; /* 162.5% */
+}
+.order_summary_container {
+    width: 354px;
+    height: 98px;
+    flex-shrink: 0;
+    border-radius: 11px;
+    background-color: var(--very-pale-blue-nautral);
+    display: flex;
+    align-items: center;
 }
