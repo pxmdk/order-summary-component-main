@@ -34,6 +34,7 @@ body {
     transform: translate(-50%, -50%);
     background-color: var(--white);
     border-radius: 20px;
+    box-shadow: 0px 40px 40px -20px rgba(13, 48, 189, 0.15);
 }
 .hero img{
     border-radius: 20px 20px 0 0;
@@ -55,7 +56,6 @@ section {
     margin-top: 17px;
     color: var(--desaturated-blue-neutral);
     text-align: center;
-    font-family: Red Hat Display;
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
@@ -65,8 +65,72 @@ section {
     width: 354px;
     height: 98px;
     flex-shrink: 0;
+    margin-top: 20px;
     border-radius: 11px;
     background-color: var(--very-pale-blue-nautral);
     display: flex;
     align-items: center;
+}
+.product_icon {
+    margin-left: 24px;
+}
+.priceplan {
+    margin-left: 20px;
+    color: var(--dark-blue-neutral);
+}
+.priceplan span p {
+    color: var(--dark-blue-neutral);
+    font-weight: 700;
+}
+.priceplan p {
+    color: var(--desaturated-blue-neutral);
+}
+.change_offer {
+    margin-left: 85px;
+}
+.change_offer a {
+    font-size: 14px;
+    color: var(--bright-blue-primary);
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration-line: underline;
+}
+.change_offer a:hover {
+    color: var(--bright-blue-primary-hover);
+}
+.checkout {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 32px;
+}
+.checkout_btn {
+    border: none;
+    width: 354px;
+    height: 50px;
+    flex-shrink: 0;
+    border-radius: 11px;
+    background: var(--bright-blue-primary);
+    box-shadow: 0px 20px 20px 0px rgba(56, 42, 225, 0.19);
+    color: var(--white);
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+.checkout_btn:hover {
+    background-color: var(--bright-blue-primary-hover);
+}
+.checkout a {
+    margin-top: 32px;
+    font-size: 15px;
+    color: var(--desaturated-blue-neutral);
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration: none;
+}
+.checkout a:hover {
+    color: var(--dark-blue-neutral);
 }
