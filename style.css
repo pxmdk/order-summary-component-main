@@ -9,51 +9,52 @@
 --desaturated-blue-neutral: hsl(224, 23%, 55%);
 --dark-blue-neutral: hsl(223, 47%, 23%);
 --white: hsl(0, 0%, 100%);
+hsla(245, 83%, 68%, 1)
 }
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 body {
-    background-image: url(images/pattern-background-desktop.svg);
+    background: url(images/pattern-background-desktop.svg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     background-color: var(--pale-blue-primary);
     font-family: 'Red Hat Display', sans-serif;
-    font-size: 1rem;
-    font-weight: 500;
 }
-.container {
+.price_summary_container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card {
     width: 450px;
     height: 697px;
-    flex-shrink: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     background-color: var(--white);
     border-radius: 20px;
+    text-align: center;
     box-shadow: 0px 40px 40px -20px rgba(13, 48, 189, 0.15);
 }
-.hero img{
+.card img {
+    height: 220px;
     border-radius: 20px 20px 0 0;
 }
-section {
-    width: 354px;
-    margin: 0 auto;
-}
-.text_content h2{
+.card h2 {
+    margin-top: 48px;
     color: var(--dark-blue-neutral);
     text-align: center;
     font-size: 28px;
     font-style: normal;
     font-weight: 900;
     line-height: normal;
-    margin-top: 32px;
 }
-.text_content p{
-    margin-top: 17px;
+.card_text {
+    width: 354px;
+    margin: 17px auto 0 auto;
+}
+.card_text p {
     color: var(--desaturated-blue-neutral);
     text-align: center;
     font-size: 16px;
@@ -61,36 +62,43 @@ section {
     font-weight: 500;
     line-height: 26px; /* 162.5% */
 }
-.order_summary_container {
+.order_summary {
     width: 354px;
     height: 98px;
-    flex-shrink: 0;
-    margin-top: 20px;
+    margin: 20px auto 0 auto;
     border-radius: 11px;
     background-color: var(--very-pale-blue-nautral);
     display: flex;
     align-items: center;
 }
-.product_icon {
-    margin-left: 24px;
+.order_summary img {
+    margin-left: 20px;
+    width: 48px;
+    height: 48px;
 }
 .priceplan {
     margin-left: 20px;
     color: var(--dark-blue-neutral);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
 }
-.priceplan span p {
-    color: var(--dark-blue-neutral);
-    font-weight: 700;
-}
-.priceplan p {
+.price {
+    margin-top: 6px;
+    margin-left: 20px;
     color: var(--desaturated-blue-neutral);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
 }
 .change_offer {
-    margin-left: 85px;
+    margin-left: 94px;
 }
 .change_offer a {
-    font-size: 14px;
     color: var(--bright-blue-primary);
+    font-size: 14px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -98,39 +106,38 @@ section {
 }
 .change_offer a:hover {
     color: var(--bright-blue-primary-hover);
+    text-decoration: none;
 }
-.checkout {
+.payment {
+    width: 354px;
     display: flex;
     flex-direction: column;
-    text-align: center;
-    margin-top: 32px;
+    margin: 32px auto 0 auto;
 }
-.checkout_btn {
+.payment button {
     border: none;
-    width: 354px;
     height: 50px;
-    flex-shrink: 0;
     border-radius: 11px;
-    background: var(--bright-blue-primary);
-    box-shadow: 0px 20px 20px 0px rgba(56, 42, 225, 0.19);
+    background-color: var(--bright-blue-primary);
     color: var(--white);
     font-size: 15px;
     font-style: normal;
     font-weight: 900;
     line-height: normal;
+    box-shadow: 0px 20px 20px 0px rgba(56, 42, 225, 0.19);
 }
-.checkout_btn:hover {
-    background-color: var(--bright-blue-primary-hover);
+.payment button:hover {
+    background: var(--bright-blue-primary-hover);
 }
-.checkout a {
+.payment .cancel_order{
     margin-top: 32px;
     font-size: 15px;
     color: var(--desaturated-blue-neutral);
     font-style: normal;
-    font-weight: 700;
+    font-weight: 900;
     line-height: normal;
-    text-decoration: none;
 }
-.checkout a:hover {
+.payment .cancel_order:hover{
     color: var(--dark-blue-neutral);
+    text-decoration: none;
 }
